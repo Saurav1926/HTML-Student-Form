@@ -4,89 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Student Registration Form</h1>
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <form action="action.php">
 
-    <form action="action.php" id="st-form">
+            <!-- Name -->
+             <div class="form-group">
+                <label for="name">Student Name:</label>
+                <input type="text" name="name" required>
+             </div>
 
-       <div class="reg-form">
+             <!-- Roll no -->
+              <div class="form-group">
+                <label for="roll">Roll no.:</label>
+                <input type="tel" name="roll" required>
+              </div>
 
-       <label>
-        <b>Student name : </b><input type="text" class="st-info">
-       </label>
-       <br><br>
-       
-       <label>
-        <b>Roll no. : </b><input type="tel" class="st-info">
-       </label>
-       <br><br>
+              <!-- Father's Name -->
+              <div class="form-group">
+                <label for="father's name">Father's Name:</label>
+                <input type="text" name="father's name" required>
+             </div>
 
-       <label>
-        <b>Father's name :  </b><input type="text" class="st-info">
-       </label>
-       <br><br>
+             <!-- Mother's Name -->
+              <div class="form-group">
+                <label for="Mother's name">Mother's Name:</label>
+                <input type="text" name="Mother's name" required>
+             </div>
 
-       <label>
-        <b>Mother's name :  </b><input type="text" class="st-info">
-       </label>
-       <br><br>
+             <!-- Date of Birth -->
+              <div class="form-group">
+                <label for="DOB">Date of Birth:</label>
+                <input type="date" name="DOB" required>
+             </div>
 
-       <label>
-        <b>Date of birth :  </b><input type="date" class="st-info">
-       </label>
-       <br><br>
+             <!-- Mobile -->
+              <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" name="mobile" required placeholder="9876543210">
+             </div>
 
-       <label>
-        <b>Mobile no. : </b><input type="tel" name="phone" class="st-info">
-       </label>
-       <br><br>
+             <!-- Email -->
+              <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" name="email" required placeholder="student123@school.com">
+              </div>
 
-       <label>
-        <b>Email id :   </b><input type="text" class="st-info">
-       </label>
-       <br><br>
+              <!-- Gender -->
+               <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male" required>Male</label>
 
-       <label>
-        <b>Gender : </b><input type="radio">male
-       </label>
+                    <label><input type="radio" name="gender" value="female" required>Female</label>
+                </div>
+               </div>
 
-       <label>
-        <input type="radio">female
-       </label>
-       <br><br>
-       
-       <label>
-        <b>Department : </b><input type="checkbox">Arts
-       </label>
+               <!-- Department -->
+                <div class="form-group">
+                    <label>Department:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox">Arts</label>
 
-       
-       <label>
-        <input type="checkbox">Science
-       </label>
+                        <label><input type="checkbox">Science</label>
 
-       
-       <label>
-        <input type="checkbox">Commerce
-       </label>
-       <br><br>
+                        <label><input type="checkbox">Commerce</label>
+                    </div>
+                </div>
 
-       <label>
-        <b>Student Photo :  </b><input type="file" id="st-photo">
-       </label>
-       <br><br>
+                <div class="form-group">
+                    <label>Student Photo:</label>
+                    <input type="file" name="photo" required class="pht">
+                </div>
 
-       <label>
-        <b>Address :    </b><input type="text" name="address" id="add-box">
-       </label>
-       <br><br>
+                <div class="form-group">
+                    <label for="addess">Address:</label>
+                    <textarea name="addess" rows="3" required></textarea>
+                </div>
 
-       <lable>
-        <input type="submit" id="id1">
-       </lable>
-
-       </div>
-    </form>
+                <div class="form-group">
+                    <button type="submit">Register</button>
+                </div>
+        </form>
+    </div> 
 </body>
 </html>
